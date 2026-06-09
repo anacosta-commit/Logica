@@ -1,0 +1,36 @@
+programa
+
+{
+
+
+	funcao inicio()
+
+	{
+
+		inteiro variavel, resultado, multiplicador
+
+
+
+		escreva ("Digite o número da tabuada desejada\n")
+
+		leia (variavel)
+
+
+
+		limpa()
+
+
+
+		para (multiplicador = 1; multiplicador <= 10; multiplicador ++)
+
+		{
+
+		resultado = variavel * multiplicador
+
+		escreva (variavel,"x", multiplicador, "=", resultado, "\n")
+
+		}
+
+	}
+
+}
