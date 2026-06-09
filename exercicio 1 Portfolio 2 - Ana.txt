@@ -1,0 +1,102 @@
+programa
+
+{
+
+
+	funcao inicio()
+
+	{
+
+ real No1, No2, resultado
+
+	inteiro opcao
+
+
+
+	escreva ("Digite seu primeiro número\n")
+
+	leia (No1)
+
+
+
+	escreva ("Digite seu segundo número\n")
+
+	leia (No2)
+
+
+
+	escreva ("Selecione o tipo de cálculo a ser realizado\n")
+
+	escreva ("1- Adição\n")
+
+	escreva ("2- Subtração\n")
+
+	escreva ("3- Multiplicação\n")
+
+	escreva ("4- Divisão\n")
+
+	leia (opcao)
+
+
+	limpa()
+
+
+
+	   escolha (opcao)
+
+	    {
+
+		caso 1:
+
+		resultado = No1 + No2
+
+		escreva ("Resultado:", resultado)
+
+		pare
+
+
+
+		caso 2: 
+
+		resultado = No1 - No2
+
+		escreva ("Resultado:", resultado)
+
+		pare
+
+
+
+		caso 3:
+
+		resultado = No1 * No2
+
+		escreva ("Resultado:", resultado)
+
+		pare
+
+
+
+		caso 4:
+
+		resultado = No1 / No2
+
+		 se (No2 == 0) {
+
+		   escreva ("Erro, não é possível dividir por 0")
+
+		 }
+
+	senao se (No2 != 0) {
+
+		escreva ("Resultado:", resultado)
+
+		 }
+
+          pare
+
+
+	    }
+
+	}
+
+	}
