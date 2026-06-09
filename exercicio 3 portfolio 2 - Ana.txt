@@ -1,0 +1,45 @@
+programa
+
+{
+
+
+	funcao inicio()
+
+	{
+
+		cadeia senha
+
+		senha = "senha123"
+
+
+
+		escreva ("Digite sua senha\n")
+
+		leia (senha)
+
+
+
+		enquanto (senha != "senha123")
+
+		{
+
+			limpa()
+
+			escreva ("Senha incorreta, tente novamente\n")
+
+			leia (senha)
+
+			limpa()
+
+		}
+
+		   se (senha == "senha123") {
+
+		   escreva ("Senha correta, bem vindo")
+
+		}
+
+	}
+
+}
+
