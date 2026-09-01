@@ -1,0 +1,65 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro hamburguer, fritas, refri, total_pedido, pedido, quantH, quantF, quantR, PedidoH, PedidoB, PedidoR, recibo
+		inteiro recibo = 5
+          inteiro hamburguer = 25
+          inteiro fritas = 15
+          inteiro refri = 10
+          inteiro pedido = 1
+
+          enquanto (pedido <  4)
+          {
+
+             escolha(pedido)
+             {
+             
+             caso 1:
+              escreva("Você escolheu o hambúrguer! Quantos você gostaria de comprar?")
+              leia (quantH)
+              (PedidoH == hamburguer * quantH)
+             pare
+
+             caso 2:             
+             escreva("Você escolheu as Batatas Fritas! Quantas você gostaria de comprar?")
+              leia (quantF)
+              (PedidoB == fritas * quantF)
+               pare
+
+             caso 3:             
+             escreva("Você escolheu o refri! Quantos você gostaria de comprar?")
+              leia (quantR)
+              (PedidoR == refri * quantR)
+              pare
+			caso 4:             
+             escreva("Você escolheu o refri! Quantos você gostaria de comprar?")
+              leia (quantR)
+              (PedidoR == refri * quantR)
+              pare
+             caso contrario:
+              escreva("Opção não disponivel! Tente novamente")
+              pare
+             }
+          }
+       
+         (total_pedido == PedidoH + PedidoB + PedidoR)
+         se (total_pedido == 0)
+         {
+         	 escreva("Pedido cancelado, por favor volte sempre!/n")
+         }
+         senao {
+         escreva("Pedido completo! Mostre seu recibo para receber seu pedido no caixa!", total_pedido,"/n")
+         }
+         
+         enquanto (recibo > 0)
+         {
+         escreva("Imprimindo...", recibo,"/n")
+         (recibo == recibo - 1)
+         util.aguarde(1000)
+         }
+       }      
+	}
+	}
+}
